@@ -13,13 +13,12 @@ const getSum = () => {
   });
 
   let lastRow = document.createElement("tr");
-  let rowLabel = document.createElement("td");
   let rowValue = document.createElement("td");
 
-  rowLabel.innerHTML = "total";
+  rowValue.id = "ans";
   rowValue.innerHTML = sum;
 
-  lastRow.append(rowLabel, rowValue);
+  lastRow.append(rowValue);
   table.append(lastRow);
 };
 
